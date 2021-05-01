@@ -1,0 +1,52 @@
+.card:hover{
+    transform: translateY(0px);
+}
+.watch-page .watch-icons{
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+.watch-iconsi:hover{
+    cursor: pointer;
+}
+.watch-page #more{
+    display: none;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.card-inner{
+    display: none;
+}
+.public-comments .card .btn{
+    background-color: #c934c9;
+    color:#fff;
+    border-color: #c934c9;
+}
+.public-comments .card .btn:hover{
+    background-color: #5e0c5e;
+}
+time{
+    left: 22px;
+}
+.watch.page .fa-play{
+    right: 46px !important;
+}
+@media(min-width:992px){
+    time{
+        font-size: 13px;
+    }
+    .fa-play{
+        font-size: 20px;
+    }
+}
+@media(max-width:1062px){
+    #myBtn{
+        margin-bottom: 60px !important;
+    }
+}
+@media(max-width:570px){
+    .reply-time{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,178 @@
+@font-face{
+    font-family: "cairofont";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+body
+{
+    font-family: "cairofont","airial";
+background-color: #fafafa;
+}
+a{
+    color: #000;
+    text-decoration: none !important;
+}
+button{
+    background-color: transparent !important;
+    color: #c934c9 !important;
+    border-color: #c934c9 !important;
+}
+button:hover{
+    color: #fff !important;
+    background-color: #c934c9 !important;
+}
+#top-menu.bg-light{
+    background-color:white !important;
+}
+.card .card-horizontal .card-body{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.card-body {
+    min-width: 0;
+}
+#top-menu .video-icon{
+    background-color: #c934c9;
+    color: #fff;
+    border-radius: 15%;;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link
+{
+    color: #fff;
+    background-color: #c934c9;
+}
+.navbar .login{
+    color: #c934c9;
+}
+input.form-control:focus,
+button:focus{
+    box-shadow: none !important;
+}
+.card .card-icons{
+    position: relative;
+}
+time {
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+    color: #fff;
+    background-color: #000;
+    padding: 0px 3py;
+}
+.card .fa-play{
+    position: absolute;
+    top: 42%;
+    right: 41%;
+    color: #2c3131c7;
+    display: none;
+}
+.card:hover .fa-play{
+display: inline;
+}
+.card:hover{
+    transform: translateY(-.9%);
+}
+.card{
+    transition: transform .5s;
+}
+#top-menu .fa-bars{
+    cursor: pointer;
+}
+.card .card-titel{
+    height: 50px;
+    overflow: hidden;;
+}
+.sidebar{
+    position: fixed;
+    z-index: 4;
+    right: -20rem ;
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+.sidebar:hover{
+    overflow: scroll;
+}
+.sidebar .purple{
+    color: #c934c9;
+}
+.sidebar .list-group-item:hover{
+    color: #fff;
+    background-color: #c934c9;
+}
+.sidebar .list-group-item:hover .purple{
+    color: #fff;
+}
+.sidebar .list-group-item{
+    width: 17rem;
+}
+#wrap.toggled .sidebar{
+    right: 0rem;
+}
+.sidebar::-webkit-scrollbar{
+    background: rgb(230, 230, 230);
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background: rgb(179, 179, 179);
+    width: 8px;
+}
+.layer{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgb(0, 0, 0 ,0.5);
+    z-index: 3;
+    display: none;
+}
+.navbar .search-icon
+{
+    color: #c934c9;
+    cursor: pointer;
+    position: absolute;
+    padding: 15px 10px;
+    top: 25px;
+    left: 132px;
+    display: none;
+    
+}
+.navbar .search-icon:hover{
+    color: white;
+    background-color: #c934c9;
+}
+.search-input{
+    position: fixed;
+    top: 72px;
+    padding: 6px 23px;
+    border: none;
+    height: 60px;
+    background-color: #efeeee;
+    display: none;
+    z-index: 1;
+}
+.search-input:focus{
+    background-color: #efeeee;
+}
+.container-fluid{
+    padding: 0px;
+    overflow: hidden;
+}
+@media (max-width:1115px) {
+    /*اخفاء حقل البحث الموجود في القائمه العلويه*/
+    .navbar .collapse .form-inline{
+        display: none;
+    } 
+    .navbar .search-icon{
+        /*اظهار ايقونه البحث*/
+        display: inline;
+    }
+}
+@media (min-width:1115px){
+    .search-input{
+        display: none !important;
+    }
+}
